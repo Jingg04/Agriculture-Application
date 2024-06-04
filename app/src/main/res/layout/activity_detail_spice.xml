@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailSpice">
+
+
+    <ImageView
+        android:id="@+id/bBack"
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="347dp"
+        android:layout_marginBottom="670dp"
+        android:src="@drawable/back" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="673dp"
+        android:text="List of Spice"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="0dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Apple -->
+        <RelativeLayout
+            android:layout_width="394dp"
+            android:layout_height="85dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/white"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/apple_image"
+                android:layout_width="58dp"
+                android:layout_height="62dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/cumin" />
+
+            <TextView
+                android:id="@+id/apple_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/apple_image"
+                android:text="Cumin"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/apple_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/apple_name"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/apple_name"
+                android:text="$9.99/1kg"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/apple_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/apple_name"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/apple_image"
+                android:text="International Product"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/aadd"
+                android:layout_width="65dp"
+                android:layout_height="62dp"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="281dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="7dp"
+                android:src="@drawable/add1" />
+
+
+        </RelativeLayout>
+
+        <!-- Repeat similar blocks for other fruits -->
+        <!-- Banana -->
+        <RelativeLayout
+            android:layout_width="395dp"
+            android:layout_height="79dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/white"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/banana_image"
+                android:layout_width="60dp"
+                android:layout_height="58dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/clove" />
+
+            <TextView
+                android:id="@+id/banana_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/banana_image"
+                android:text="Clove"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/banana_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/banana_name"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/banana_name"
+                android:text="$2.99/1kg"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/banana_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/banana_name"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/banana_image"
+                android:text="International Product"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/badd"
+                android:layout_width="78dp"
+                android:layout_height="64dp"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="283dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="7dp"
+                android:src="@drawable/add1" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="393dp"
+            android:layout_height="74dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/white"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/mango_image_1"
+                android:layout_width="64dp"
+                android:layout_height="55dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/coriander" />
+
+            <TextView
+                android:id="@+id/mango_name_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/mango_image_1"
+                android:text="Coriander"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mango_price_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/mango_name_1"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/mango_name_1"
+                android:text="$1.99/1kg"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/mango_description_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mango_name_1"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/mango_image_1"
+                android:text="International Product"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/madd"
+                android:layout_width="65dp"
+                android:layout_height="62dp"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="281dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="7dp"
+                android:src="@drawable/add1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="390dp"
+            android:layout_height="76dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/white"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/watermelon"
+                android:layout_width="64dp"
+                android:layout_height="55dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/cinnamon" />
+
+            <TextView
+                android:id="@+id/twatermelon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/watermelon"
+                android:text="Cinnamon"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pwatermelon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/watermelon"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/twatermelon"
+                android:text="$9.99"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/dwatermelon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/twatermelon"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/watermelon"
+                android:text="International Product"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/wadd"
+                android:layout_width="65dp"
+                android:layout_height="62dp"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="281dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="7dp"
+                android:src="@drawable/add1" />
+
+        </RelativeLayout>
+
+        <!-- Add similar blocks for Mango, Grapes, Papaya, Coconut, Guava, Orange, Pineapple, Watermelon -->
+
+    </LinearLayout>
+
+</RelativeLayout>

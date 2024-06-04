@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".Pp"
+            android:exported="false" />
+        <activity
+            android:name=".PostProduct"
+            android:exported="false" />
+        <activity
+            android:name=".Ginger"
+            android:exported="false" />
+        <activity
+            android:name=".PumkinSeeds"
+            android:exported="false" />
+        <activity
+            android:name=".RomdoulRice"
+            android:exported="false" />
+        <activity
+            android:name=".WaterMelon"
+            android:exported="false" />
+        <activity
+            android:name=".DetailPlants"
+            android:exported="false" />
+        <activity
+            android:name=".DetailSeeds"
+            android:exported="false" />
+        <activity
+            android:name=".DetailSpice"
+            android:exported="false" />
+        <activity
+            android:name=".DetailGrant"
+            android:exported="false" />
+        <activity
+            android:name=".DetailFruit"
+            android:exported="false" />
+        <activity
+            android:name=".DetailVegetable"
+            android:exported="false" />
+        <activity
+            android:name=".Mango"
+            android:exported="false" />
+        <activity
+            android:name=".Orange"
+            android:exported="false" />
+        <activity
+            android:name=".ProductDetail"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileEdit"
+            android:exported="false" />
+        <activity
+            android:name=".ProductList"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

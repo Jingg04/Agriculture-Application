@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mango"
+    android:id="@+id/main">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mango"
+        android:textSize="50sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="20dp"
+        android:textStyle="bold"/>
+    <!-- Product Image -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Product Image -->
+            <ImageView
+                android:id="@+id/mango2"
+                android:layout_width="231dp"
+                android:layout_height="203dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mango" />
+
+            <!-- Product Name -->
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mango2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="Khmer Mango"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Product Description -->
+            <TextView
+                android:id="@+id/product_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="This product is plated by Khmer Farmers. No Chemicals.Tel:0121894263"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <!-- Product Price -->
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_description"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="Price: $10.00/1kg"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Buy Button -->
+    <Button
+        android:id="@+id/buy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_view1"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Buy"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:textColor="@android:color/white"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium" />
+
+    <ImageView
+        android:id="@+id/bBack1"
+        android:layout_width="75dp"
+        android:layout_height="66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/back" />
+
+
+</RelativeLayout>
+

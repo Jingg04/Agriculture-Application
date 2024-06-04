@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductList">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginStart="-172dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:scaleType="matrix"
+        android:src="@drawable/bts_corner" />
+
+    <ImageView
+        android:id="@+id/imageButton6"
+        android:layout_width="70dp"
+        android:layout_height="69dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="27dp"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/pf" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="153dp"
+        android:layout_height="87dp"
+        android:layout_alignBottom="@+id/imageButton6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="-17dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Welcome back User!"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/textView4"
+        android:background="@drawable/bts_corner"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="50dp"
+        android:id="@+id/search"
+        android:hint="search your favourite here"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/category"
+        android:text="Category"
+        android:layout_below="@+id/search"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/msp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="20dp"
+        android:text="Most Popular Product"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/vegetable"
+        android:layout_width="97dp"
+        android:layout_height="89dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="168dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/vegetable" />
+
+    <TextView
+        android:id="@+id/tvegatable"
+        android:layout_width="83dp"
+        android:layout_height="21dp"
+        android:layout_below="@id/vegetable"
+        android:layout_alignStart="@+id/vegetable"
+        android:layout_alignEnd="@+id/vegetable"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginEnd="-10dp"
+        android:text="Vegetable" />
+
+    <ImageView
+        android:id="@+id/fruit"
+        android:layout_width="115dp"
+        android:layout_height="109dp"
+        android:layout_below="@id/search"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="28dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fruit" />
+
+    <TextView
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fruit"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="-15dp"
+        android:layout_marginEnd="167dp"
+        android:text="Fruit" />
+
+    <ImageView
+        android:id="@+id/grain"
+        android:layout_width="113dp"
+        android:layout_height="114dp"
+        android:layout_below="@id/search"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="28dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/grain" />
+
+    <TextView
+        android:id="@+id/tgrain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grain"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-14dp"
+        android:layout_marginEnd="71dp"
+        android:text="Grain" />
+
+    <ImageView
+        android:id="@+id/spice1"
+        android:layout_width="97dp"
+        android:layout_height="95dp"
+        android:layout_below="@id/tvegatable"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="-5dp"
+        android:src="@drawable/spice" />
+
+    <TextView
+        android:id="@+id/tspice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spice1"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="355dp"
+        android:text="Herb and Spice" />
+
+    <ImageView
+        android:id="@+id/seed"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="277dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="382dp"
+        android:src="@drawable/seed" />
+
+    <TextView
+        android:id="@+id/tseed"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="354dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="358dp"
+        android:text="Nut and Seed" />
+
+    <ImageView
+        android:id="@+id/plants1"
+        android:layout_width="89dp"
+        android:layout_height="83dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="278dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="380dp"
+        android:src="@drawable/plants" />
+
+    <TextView
+        android:id="@+id/tplants"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="271dp"
+        android:layout_marginTop="354dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="358dp"
+        android:text="Medicinal Plants" />
+
+    <ImageView
+        android:layout_width="106dp"
+        android:layout_height="99dp"
+        android:layout_below="@id/msp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="287dp"
+        android:src="@drawable/orange"
+        android:id="@+id/orange1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orange1"
+        android:text="Khmer Orange"
+        android:layout_marginStart="30dp"
+        android:id="@+id/torange"
+        />
+
+    <ImageView
+        android:id="@+id/mango1"
+        android:layout_width="106dp"
+        android:layout_height="94dp"
+        android:layout_below="@id/msp"
+        android:layout_alignBottom="@+id/orange1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/mango" />
+
+    <TextView
+        android:id="@+id/tmango"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mango1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="158dp"
+        android:text="Khmer Mango"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/rice"
+        android:layout_width="104dp"
+        android:layout_height="84dp"
+        android:layout_below="@id/torange"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="285dp"
+        android:src="@drawable/rice" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rice"
+        android:text="Romdoul Rice"
+        android:layout_marginStart="30dp"
+        android:id="@+id/trice"/>
+
+    <ImageView
+        android:id="@+id/watermelon1"
+        android:layout_width="96dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/msp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/watermelon" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/twatermelon"
+        android:layout_below="@id/watermelon1"
+        android:text="Khmer Watermelon"
+        android:layout_marginStart="270dp"/>
+
+    <ImageView
+        android:id="@+id/pumpkin1"
+        android:layout_width="96dp"
+        android:layout_height="86dp"
+        android:layout_below="@id/tmango"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="157dp"
+        android:src="@drawable/pumpkin" />
+
+    <TextView
+        android:id="@+id/tpumpkin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pumpkin1"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="0dp"
+        android:text="Pumkin Seeds" />
+
+    <ImageView
+        android:id="@+id/ginger1"
+        android:layout_width="101dp"
+        android:layout_height="92dp"
+        android:layout_below="@id/twatermelon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="29dp"
+        android:src="@drawable/ginger" />
+
+    <TextView
+        android:id="@+id/tginger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ginger1"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="-3dp"
+        android:text="Ginger" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="45dp"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="5dp"
+        app:srcCompat="@drawable/filter" />
+
+    <ImageView
+        android:id="@+id/home1"
+        android:layout_width="57dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/rice"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/message1"
+        android:layout_width="57dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/ginger1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="56dp"
+        android:src="@drawable/message" />
+
+    <ImageView
+        android:id="@+id/post1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignTop="@+id/home1"
+
+        android:layout_alignBottom="@+id/home1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="-9dp"
+        android:layout_toStartOf="@+id/message1"
+        android:src="@drawable/post" />
+</RelativeLayout>

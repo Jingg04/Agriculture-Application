@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pp">
+    <ImageView
+        android:id="@+id/imageViewProduct"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Product Image"
+        android:src="@drawable/addimage" />
+
+    <Button
+        android:id="@+id/buttonChooseImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewProduct"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/blue"
+        android:text="Choose Image" />
+
+
+    <EditText
+        android:id="@+id/editTextProductTitle"
+        android:layout_width="412dp"
+        android:layout_height="44dp"
+        android:layout_below="@id/buttonChooseImage"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bts_corner"
+        android:hint="Product Title"
+        android:inputType="text" />
+
+
+    <EditText
+        android:id="@+id/editTextProductDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextProductTitle"
+        android:layout_marginTop="8dp"
+        android:hint="Product Details"
+        android:inputType="textMultiLine"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:lines="4"
+
+        android:background="@drawable/bts_corner"/>
+
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="406dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextProductDetails"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bts_corner"
+        android:hint="Phone Number"
+        android:inputType="phone" />
+
+
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="406dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/editTextPhoneNumber"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bts_corner"
+        android:hint="Price"
+        android:inputType="numberDecimal" />
+
+
+    <Button
+        android:id="@+id/buttonPostProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPrice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Post Product"
+        android:backgroundTint="@color/black"/>
+
+    <ImageView
+        android:id="@+id/bBack2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="330dp"
+        android:layout_marginBottom="650dp"
+        android:src="@drawable/back" />
+
+
+</RelativeLayout>
